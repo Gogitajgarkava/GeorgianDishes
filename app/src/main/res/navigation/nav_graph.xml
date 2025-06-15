@@ -28,7 +28,13 @@
         android:id="@+id/fragmentMainScreen"
         android:name="com.example.georgiandishes.MainPage.FragmentMainScreen"
         android:label="fragment_main_screen"
-        tools:layout="@layout/fragment_main_screen" />
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_main_to_signIn"
+            app:destination="@id/fragmentSingIn"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/fragmentMainScreen"/>
+    </fragment>
     <fragment
         android:id="@+id/fragmentCreateNewAccount"
         android:name="com.example.georgiandishes.AuthFragments.FragmentCreateNewAccount"
