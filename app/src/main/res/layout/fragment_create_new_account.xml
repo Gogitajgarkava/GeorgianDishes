@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthFragments.FragmentCreateNewAccount">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="40dp"
+        android:paddingTop="40dp"
+        android:background="@drawable/background"
+        android:layout_margin="15dp">
+
+        <EditText
+            android:id="@+id/Eiditname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name *"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"
+            />
+
+        <EditText
+            android:id="@+id/EiditLname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Last Name *"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="Enter Your Bith  *"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Enter Your Email  *"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password  *"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Confirm Password *"
+            android:background="@drawable/edittext_background"
+            android:padding="10dp"
+            android:layout_marginBottom="25dp"/>
+
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create New account"
+            android:background="@drawable/buttonstyle"
+            android:backgroundTint="#84E91E63"/>
+    </LinearLayout>
+</FrameLayout>

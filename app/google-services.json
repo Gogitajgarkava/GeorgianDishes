@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "641780180788",
+    "project_id": "georgian-cuisine-guide",
+    "storage_bucket": "georgian-cuisine-guide.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641780180788:android:2e98a30bd311be8dcd2761",
+        "android_client_info": {
+          "package_name": "com.example.georgiancuisineguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "641780180788-8ct62e5m1gdpha9ik2osriqpp8el8bbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPCn1NIS5PCjfyOGtsZ9btyTJKGeXXxiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "641780180788-8ct62e5m1gdpha9ik2osriqpp8el8bbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641780180788:android:24b48c136f801a62cd2761",
+        "android_client_info": {
+          "package_name": "com.example.georgiandishes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "641780180788-8ct62e5m1gdpha9ik2osriqpp8el8bbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPCn1NIS5PCjfyOGtsZ9btyTJKGeXXxiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "641780180788-8ct62e5m1gdpha9ik2osriqpp8el8bbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
