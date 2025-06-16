@@ -34,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -47,6 +50,9 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.firebase.database)
+    implementation(libs.androidx.annotation)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -59,4 +65,7 @@ dependencies {
     implementation("androidx.room:room-guava:$room_version")
     testImplementation("androidx.room:room-testing:$room_version")
     implementation("androidx.room:room-paging:$room_version")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation("com.squareup.picasso:picasso:2.8") 
+
 }

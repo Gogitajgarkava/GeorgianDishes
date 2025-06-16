@@ -1,0 +1,10 @@
+package com.example.georgiandishes.MainPage
+
+
+import androidx.fragment.app.Fragment
+import com.example.georgiandishes.R
+
+class FragmentAdd : Fragment(R.layout.fragment_add) {
+
+
+}
