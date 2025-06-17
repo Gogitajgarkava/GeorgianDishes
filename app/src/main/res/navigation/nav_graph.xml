@@ -71,6 +71,61 @@
         tools:layout="@layout/fragment_menu" >
         <action
             android:id="@+id/action_fragmentProfile_to_fragmentSingIn"
-            app:destination="@id/fragmentSingIn" />
+            app:destination="@id/fragmentSingIn"
+            app:popUpTo="@id/fragmentProfile"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentProfile2"
+            app:destination="@id/fragmentProfile2" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentAboutApp"
+            app:destination="@id/fragmentAboutApp" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentChangePassword"
+            app:destination="@id/fragmentChangePassword" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentContact"
+            app:destination="@id/fragmentContact" />
+        <action
+            android:id="@+id/action_fragmentProfile_to_fragmentRuls"
+            app:destination="@id/fragmentRuls" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAboutApp"
+        android:name="com.example.georgiandishes.MainPage.MenuFragment.FragmentAboutApp"
+        android:label="fragment_about_app"
+        tools:layout="@layout/fragment_about_app" />
+    <fragment
+        android:id="@+id/fragmentChangePassword"
+        android:name="com.example.georgiandishes.MainPage.MenuFragment.FragmentChangePassword"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/fragmentContact"
+        android:name="com.example.georgiandishes.MainPage.MenuFragment.FragmentContact"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" >
+        <action
+            android:id="@+id/action_fragmentContact_to_fragmentProfile"
+            app:destination="@id/fragmentProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfile2"
+        android:name="com.example.georgiandishes.MainPage.MenuFragment.FragmentProfile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_fragmentProfile2_to_fragmentProfile"
+            app:destination="@id/fragmentProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRuls"
+        android:name="com.example.georgiandishes.MainPage.MenuFragment.FragmentRuls"
+        android:label="fragment_ruls"
+        tools:layout="@layout/fragment_ruls" >
+        <action
+            android:id="@+id/action_fragmentRuls_to_fragmentProfile"
+            app:destination="@id/fragmentProfile" />
     </fragment>
 </navigation>
