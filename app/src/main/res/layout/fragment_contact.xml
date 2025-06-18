@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15sp"
-            android:text="+995 593 10 42 25"
+            android:text="+995 032 25 60 60"
             android:layout_margin="25dp"
             android:drawableLeft="@drawable/contact"
             android:drawablePadding="45dp"/>

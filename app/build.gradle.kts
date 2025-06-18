@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    kotlin("kapt")
     alias(libs.plugins.google.gms.google.services)
 }
 
@@ -27,6 +28,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -56,16 +58,17 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
     val room_version = "2.7.1"
     implementation("androidx.room:room-runtime:$room_version")
-    annotationProcessor("androidx.room:room-compiler:$room_version") // Only for Java source
+    kapt("androidx.room:room-compiler:$room_version")
     implementation("androidx.room:room-ktx:$room_version")
     implementation("androidx.room:room-rxjava2:$room_version")
     implementation("androidx.room:room-rxjava3:$room_version")
     implementation("androidx.room:room-guava:$room_version")
     testImplementation("androidx.room:room-testing:$room_version")
     implementation("androidx.room:room-paging:$room_version")
-    implementation("de.hdodenhof:circleimageview:3.1.0")
-    implementation("com.squareup.picasso:picasso:2.8") 
 
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation("com.squareup.picasso:picasso:2.8")
 }

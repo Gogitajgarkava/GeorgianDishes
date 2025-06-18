@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/regionImageView"
+        android:layout_width="220dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:background="@drawable/imagestile"
+        app:srcCompat="@drawable/ic_launcher_background"
+        />
+
+    <TextView
+
+        android:id="@+id/regionNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Region Name"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="#280CF4"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

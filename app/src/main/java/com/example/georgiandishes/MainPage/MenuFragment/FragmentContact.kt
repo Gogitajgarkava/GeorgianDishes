@@ -1,6 +1,7 @@
 package com.example.georgiandishes.MainPage.MenuFragment
 
 
+import android.graphics.Typeface
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
@@ -20,6 +21,11 @@ class FragmentContact : Fragment(R.layout.fragment_contact) {
         Phone = view.findViewById(R.id.textView4)
         Mail = view.findViewById(R.id.textView5)
         Website = view.findViewById(R.id.textView6)
+
+        contact.setTypeface(null, Typeface.BOLD)
+        Phone.setTypeface(null, Typeface.BOLD)
+        Mail.setTypeface(null, Typeface.BOLD)
+        Website.setTypeface(null, Typeface.BOLD)
 
     }
 

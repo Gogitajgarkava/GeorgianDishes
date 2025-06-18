@@ -61,9 +61,13 @@
         tools:layout="@layout/fragment_favorite" />
     <fragment
         android:id="@+id/fragmentHome"
-        android:name="com.example.georgiandishes.MainPage.FragmentHome"
+        android:name="com.example.georgiandishes.MainPage.HomePage.FragmentHome"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentHome_to_detailDishFragment"
+            app:destination="@id/detailDishFragment" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentProfile"
         android:name="com.example.georgiandishes.MainPage.MenuFragment.FragmentMenu"
@@ -87,9 +91,6 @@
         <action
             android:id="@+id/action_fragmentProfile_to_fragmentContact"
             app:destination="@id/fragmentContact" />
-        <action
-            android:id="@+id/action_fragmentProfile_to_fragmentRuls"
-            app:destination="@id/fragmentRuls" />
     </fragment>
     <fragment
         android:id="@+id/fragmentAboutApp"
@@ -120,12 +121,12 @@
             app:destination="@id/fragmentProfile" />
     </fragment>
     <fragment
-        android:id="@+id/fragmentRuls"
-        android:name="com.example.georgiandishes.MainPage.MenuFragment.FragmentRuls"
-        android:label="fragment_ruls"
-        tools:layout="@layout/fragment_ruls" >
+        android:id="@+id/detailDishFragment"
+        android:name="com.example.georgiandishes.MainPage.HomePage.DetailDishFragment"
+        android:label="fragment_detail_dish"
+        tools:layout="@layout/fragment_detail_dish" >
         <action
-            android:id="@+id/action_fragmentRuls_to_fragmentProfile"
-            app:destination="@id/fragmentProfile" />
+            android:id="@+id/action_detailDishFragment_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
     </fragment>
 </navigation>
