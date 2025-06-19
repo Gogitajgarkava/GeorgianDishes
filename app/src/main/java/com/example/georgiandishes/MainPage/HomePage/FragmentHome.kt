@@ -26,7 +26,7 @@ class FragmentHome : Fragment(R.layout.fragment_home) {
         Region("კახეთი", "https://storage.georgia.travel/images/alaverdi.webp"),
         Region("აჭარა", "https://www.turebi.ge/uploads/photos/tours1/large/33045_2.jpg?v=0"),
         Region("აფხაზეთი", "https://storage.googleapis.com/feedc_v1_largepostimages/MTY5MTIwX3Bvc3RfMTU5NTMyNTM5Mw==.jpeg"),
-       // Region("გურია", "https://atravel.home.blog/wp-content/uploads/2019/01/411x261-1-1200x675.png"),
+       Region("გურია", "https://atravel.home.blog/wp-content/uploads/2019/01/411x261-1-1200x675.png"),
         Region("რაჭა - ლეჩხუმი", "https://mbg.ge/uploads/locblogs/large/59b4e2b97df203eec6d87259f15d139b.jpg"),
         Region("სამცხე - ჯავახეთი", "https://storage.georgia.travel/images/vardzia-in-samtskhe-javakheti.webp"),
         Region("ქვემო ქართლი", "https://cdn.georgiantravelguide.com/storage/files/kveshis-tsikhe-qveshis-tsikhe-kvemo-kartli.jpg"),

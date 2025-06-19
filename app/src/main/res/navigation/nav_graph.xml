@@ -53,12 +53,10 @@
         android:label="fragment_add"
         tools:layout="@layout/fragment_add" >
 
+        <action
+            android:id="@+id/action_fragmentAdd_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
     </fragment>
-    <fragment
-        android:id="@+id/fragmentFavorite"
-        android:name="com.example.georgiandishes.MainPage.FragmentFavorite"
-        android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" />
     <fragment
         android:id="@+id/fragmentHome"
         android:name="com.example.georgiandishes.MainPage.HomePage.FragmentHome"

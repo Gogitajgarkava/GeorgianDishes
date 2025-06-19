@@ -5,10 +5,34 @@
     android:layout_height="match_parent"
     tools:context=".MainPage.HomePage.DetailDishFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textSize="40sp"
+        android:textColor="#BBF321D0"/>
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="TextView"
+        android:layout_marginTop="200dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textViewRecept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="350dp"
+        android:padding="10dp"
+        android:textSize="15sp"/>
+
 
 </FrameLayout>

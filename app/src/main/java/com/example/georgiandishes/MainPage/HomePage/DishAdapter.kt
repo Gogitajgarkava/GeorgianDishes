@@ -3,10 +3,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.Navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.georgiandishes.MainPage.HomePage.Database.Dish
 import com.example.georgiandishes.R
 import com.squareup.picasso.Picasso
+import android.os.Bundle
+
 
 class DishAdapter(private var dishes: List<Dish>) :
     RecyclerView.Adapter<DishAdapter.ViewHolder>() {
@@ -31,13 +34,21 @@ class DishAdapter(private var dishes: List<Dish>) :
         val dish = dishes[position]
         holder.dishNameTextView.text = dish.name
         Picasso.get()
-                .load(dish.imageUrl)
+            .load(dish.imageUrl)
             .into(holder.dishimage)
 
+        holder.itemView.setOnClickListener {
+            val bundle = Bundle().apply {
+                putString("dish_name", dish.name)
+                putString("dish_description", dish.description)
+                putString("dish_recipe", dish.recipe)
+            }
+
+            findNavController(it).navigate(R.id.action_fragmentHome_to_detailDishFragment, bundle)
+        }
 
     }
 
     override fun getItemCount(): Int = dishes.size
+
 }
-
-
