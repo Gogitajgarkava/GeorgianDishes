@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.georgiandishes.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
@@ -81,6 +82,7 @@ class FragmentProfile : Fragment(R.layout.fragment_profile) {
             database.child(userId).updateChildren(userUpdates)
                 .addOnSuccessListener {
                     Toast.makeText(context, "User data updated successfully", Toast.LENGTH_SHORT).show()
+                    findNavController().navigate(R.id.action_fragmentProfile2_to_fragmentProfile)
                 }
                 .addOnFailureListener { e ->
                     Toast.makeText(context, "Failed to update user data: ${e.message}", Toast.LENGTH_SHORT).show()

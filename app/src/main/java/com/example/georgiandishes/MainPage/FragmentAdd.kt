@@ -64,21 +64,22 @@ class FragmentAdd : Fragment(R.layout.fragment_add) {
                 Toast.makeText(requireContext(), "შეავსეთ ყველა ველი!", Toast.LENGTH_SHORT).show()
             } else {
 
-                uploadDataToFirebase(name, description, recipe, imageUrl, selectedRegion)
+                uploadDataToFirebase(id,name, description, recipe, imageUrl, selectedRegion)
             }
         }
     }
 
     private fun uploadDataToFirebase(
+        id: Int,
         name: String,
         description: String,
         recipe: String,
         imageUrl: String,
         region: String
     ) {
-        val databaseRef = FirebaseDatabase.getInstance("https://georgian-cuisine-guide-default-rtdb.europe-west1.firebasedatabase.app").reference.child("dishes").push()
-
+        val databaseRef = FirebaseDatabase.getInstance("https://georgian-cuisine-guide-default-rtdb.europe-west1.firebasedatabase.app/").reference.child("dishes").push()
         val dishMap = mapOf(
+            "id" to (0..10000).random(),
             "name" to name,
             "description" to description,
             "recipe" to recipe,

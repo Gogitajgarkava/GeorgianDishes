@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.georgiandishes.MainPage.HomePage.Database.*
 import com.example.georgiandishes.R
 import kotlinx.coroutines.launch
@@ -19,6 +20,7 @@ class FragmentHome : Fragment(R.layout.fragment_home) {
     private lateinit var regionAdapter: RegionAdapter
     private lateinit var dishAdapter: DishAdapter
     private lateinit var dishViewModel: DishViewModel
+    private lateinit var swipeRefreshLayout: SwipeRefreshLayout
 
     private val regions = listOf(
         Region("სამეგრელო", "https://zugdidi.gov.ge/img/contact/3_1703402037.jpg"),
@@ -40,15 +42,15 @@ class FragmentHome : Fragment(R.layout.fragment_home) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+        swipeRefreshLayout = view.findViewById(R.id.swipeRefreshLayout)
         regionRecyclerView = view.findViewById(R.id.regionRecyclerView)
         dishesRecyclerView = view.findViewById(R.id.dishesRecyclerView)
-
 
         val db = AppDatabase.getDatabase(requireContext())
         val repository = DishRepository(db.dishDao())
         val factory = DishViewModelFactory(repository)
         dishViewModel = ViewModelProvider(this, factory)[DishViewModel::class.java]
-
 
         regionAdapter = RegionAdapter(regions) { selectedRegion ->
             updateDishesForRegion(selectedRegion.name)
@@ -60,6 +62,12 @@ class FragmentHome : Fragment(R.layout.fragment_home) {
 
         fetchDishesOnce()
 
+        swipeRefreshLayout.setOnRefreshListener {
+            lifecycleScope.launch {
+                dishViewModel.fetchFromFirebase()
+                swipeRefreshLayout.isRefreshing = false
+            }
+        }
 
         dishViewModel.dishes.observe(viewLifecycleOwner) { data ->
             allDishes = data
