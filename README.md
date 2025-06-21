@@ -81,7 +81,7 @@ Open the project in Android Studio
 
 This application was developed by **Jgarkavas Industries** within the scope of the **Mobile Application Development** course at **Alte University**.
 
-##👥 Team Members:
+## 👥 Team Members:
 Gogita Jgarkava – Team Lead / Android Developer
 Lasha Tsikaridze - Just a nice man.
 
