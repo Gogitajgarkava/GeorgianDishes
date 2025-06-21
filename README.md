@@ -83,6 +83,7 @@ This application was developed by **Jgarkavas Industries** within the scope of t
 
 ## 👥 Team Members:
 Gogita Jgarkava – Team Lead / Android Developer
+
 Lasha Tsikaridze - Just a nice man.
 
 
