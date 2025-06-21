@@ -20,6 +20,7 @@ This application provides an interactive platform for users to learn about and c
   ![Screenshot 2025-06-21 214730](https://github.com/user-attachments/assets/681afc85-e06d-4e6d-96b5-cdd0179454d6)
 - **Forgot Password**: Users can reset their password if forgotten.
 - ![Screenshot 2025-06-21 214742](https://github.com/user-attachments/assets/0d2c15b6-128f-4e11-95ed-3e5eed8be1b0)
+  
 - **Create Account**: New users can create an account.
 ![Screenshot 2025-06-21 214753](https://github.com/user-attachments/assets/4257d3c2-7e15-47ba-a704-9057c20be73a)
 
