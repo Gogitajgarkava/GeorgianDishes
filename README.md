@@ -44,6 +44,8 @@ This application provides an interactive platform for users to learn about and c
 - **Rules**: Users can view the app's rules.
 - **Contact**: Users can access company contact information.
 - **About App**: Users can learn more about the application.
+- ![Screenshot 2025-06-21 214652](https://github.com/user-attachments/assets/0e561afc-69e1-48f3-be5d-ffa10b001a78)
+
 
 
 ##  Technologies Used
